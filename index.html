@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/vendor/pico.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/javascript" src="js/app.js"></script>
+    <script type="application/javascript" src="js/events.js"></script>
+    <script type="application/javascript" src="js/calculator.js"></script>
+    <script type="application/javascript" src="js/store.js"></script>
+    <title>Text2Column</title>
+  </head>
+
+  <body>
+    <main class="container-fluid">
+      <h1>Text 2 Columns</h1>
+      <div class="grid">
+        <div>
+          <input id="regions" type="text" placeholder="001-003:Id;004-10:Partner Id" />
+          <small>Specify columns with ranges and labels. <span id="log"></span></small>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <textarea id="data"></textarea>
+          <small>Paste data here.</small>
+        </div>
+      </div>
+      <hr />
+      <div class="grid">
+        <div>
+          <table id="output"></table>
+        </div>
+      </div>
+    </main>
+    <script type="application/javascript" src="js/index.js"></script>
+  </body>
+
+</html>
